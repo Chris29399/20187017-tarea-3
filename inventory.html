@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asklepius — Main Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    
+    <h1 class="h3 mt-3 mb-3 font-weight-normal">Asklepius</h1>
+
+    <div class="container-fluid">
+        <table class="col-6">
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onSubmit();" id="dashboardForm" style="max-width: 360px;margin: auto;" autocomplete="off">
+                        <label for="code">Code</label>
+                        <input type="text" id="code" class="form-control" placeholder="Code" required autofocus>
+
+                        <label for="productName">Product Name</label>
+                        <input type="text" id="productName" class="form-control" placeholder="Product Name" required autofocus>
+
+                        <label for="price">Price</label>
+                        <input type="text" id="price" class="form-control" placeholder="Price" required autofocus>
+
+                        <label for="quantity">Quantity</label>
+                        <input type="text" id="quantity" class="form-control" placeholder="Quantity" required autofocus>
+
+                        <button type="submit" id="addBtn" class="btn btn-primary mt-3">Add</button>
+                    </form>
+                </td>
+                <td>
+                    <table style="margin-left: 16px;" class="table table-striped" id="productList">
+                        <thead>
+                            <tr>
+                                <th scope="col">Code</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Price</th>
+                                <th scope="col">Qty</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>
